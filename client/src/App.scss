@@ -1,0 +1,446 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222 ;
+  height:150px;
+  padding: 20px;
+  margin: 1rem 1rem;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  color: white;
+}
+
+.App-intro {
+  font-size: large; 
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+
+  html { 
+    background: url(ocean.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  // html,
+  // body {
+  //   height: 100%;
+  //   min-height: 600px;
+  // }
+  // body {
+    
+  //   background: url(ocean.jpg) ;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   height: 100%;
+  //   font-family: 'roboto', 'helvetica neue', arial, sans-serif;
+    
+    
+  // }
+
+    
+  /* --- Intro text to the page --- */
+  .intro {
+    padding: 15px 15px 25px 15px;
+    background-color: #ffffff;
+    text-align: center;
+    border: 2px solid black;
+    margin: 3% auto;
+    width: 900px;
+    opacity: 0.6;
+    border-radius: 25px;
+    left: 15%;
+  }
+  .intro .intro__title {
+    font-weight: 200;
+    font-size: 32px;
+    color: black;
+    font-style: serif;
+  }
+  .intro .intro__body {
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    opacity: 10;
+    padding: 0 160px;
+    margin: 0;
+  }
+  
+
+ 
+  ul {
+      padding: 0;
+  }
+  ul, li {
+    list-style: none;
+  }
+  a {
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+
+
+
+ 
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+  
+ 
+  
+  
+ 
+
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  
+  .App-header {
+    background-color: rgb(23, 164, 211)  ;
+    opacity: .7;
+    margin-bottom: 5em;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-intro {
+    font-size: large; 
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  * {
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      height: 100%;
+      min-height: 600px;
+    }
+    body {
+      
+      background: url(ocean.jpg) ;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      font-family:'Amiri', serif;
+      
+    }
+    
+    
+
+    @media all and (min-width: 480px) {
+      .Login {
+        padding: 60px 0;
+      }
+    
+      .Login form {
+        margin: 0 auto;
+        max-width: 320px;
+      }
+    }
+    
+    
+    .Login {
+    padding: 15px 15px 25px 15px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+    border: 2px rounded black;
+    margin: 10% auto;
+    width:25% ;
+    height:275px;
+    opacity: 0.7;
+    border-radius: 25px
+    
+    
+    }
+  
+    .Login .login__title {
+      font-weight: 200;
+      font-size: 32px;
+      color: black;
+      font-style: serif;
+    }
+
+    .Login .login__body {
+      color: black;
+    }
+    .splash {
+      padding: 15px 15px 25px 15px;
+      background-color:#ffffff;
+      text-align: center;
+      border: 2px solid black;
+      margin: 3% auto;
+      width:500 px;
+      opacity: 1;
+      border-radius: 25px
+    }
+    .splash .splash__title {
+      font-weight: 400;
+      font-size: 32px;
+      color: black;
+      font-style: serif;
+    }
+    .splash .splash__body {
+      color: black;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      opacity: 10;
+      padding: 0 160px;
+      margin: 0;
+      text-align: justify;
+      text-indent: 20px;
+    }
+    
+    .btnsbmt {
+      border-radius: 25px;
+      cursor: pointer;
+    }
+ 
+    .Register {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px 15px 25px 15px;
+      background-color: #ffffff;
+      text-align: center;
+      border: 2px rounded black;
+      margin: 10% auto;
+      width: 50%;
+      opacity: 0.9;
+      border-radius: 25px
+    }
+
+    .Register .register__title {
+      font-weight: 200;
+      font-size: 32px;
+      color: black;
+      font-style: serif;
+    }
+
+    .frmlbl {
+      color: black;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+      opacity: 10;
+      padding: 0 160px;
+      margin: 0;
+    }
+    
+
+
+
+
+
+    /*styles for flashcards need to figure out how to impliment into App.scss */
+.card-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  background-color: rgb(161, 153, 201);
+  transform-style: preserve-3d;
+  transition: 150ms;
+  cursor: pointer;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+  translateY(var(--translate-y, 0));
+}
+#flashcard {
+  background-color: rgb(161, 153, 201);
+}
+
+.card:hover {
+  --translate-y: -2px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card .front {
+  left: 0;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  padding: 1rem;
+  backface-visibility: hidden;
+}
+
+.card .back {
+transform: rotateY(180deg);  
+}
+
+.flashcard-options {
+  margin-top: .5rem;
+}
+
+.flashcard-option {
+  margin-top: .25rem;
+  color: #555;
+  font-size: .75rem;
+  transition: 0.4s linear all;
+  text-align: center;
+}
+.flashcard-option span {
+  transition: 0.4s linear all;
+}
+.flashcard-option span:hover {
+  background-color: dodgerblue;
+  color: #fff;
+  border-radius: .5em;
+}
+
+
+
+.flashcard-option:first-child {
+  margin-top: 0;
+}
+
+
+.forum {
+  padding: 25px 25px 25px 25px;
+      background-color: #ffffff;
+      text-align: center;
+      border: 2px solid black;
+      margin: 10% auto;
+      width: 100%;
+      height: 1500%;
+      opacity: 0.6;
+      border-radius: 25px;
+     
+}
+
+.forum .forum__title {
+  font-weight: 200;
+  font-size: 32px;
+  color: black;
+  font-style: serif;
+}
+
+input[type=text] {
+  width: 75%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+}
+
+#surfer {
+  background-color: teal;
+  color: black;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+#California {
+  background-color: tan;
+  color: black;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+#nets {
+  background-color: lightblue;
+  color: black;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+#coral {
+  background-color: lightblue;
+  color: black;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+#shark {
+  background-color: lightblue;
+  color: black;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+#hawaii {
+  background-color: tan;
+  color: black;
+  opacity: .7;
+  border-radius: 10px;
+}
+#redTide {
+  background-color: red;
+  color: black;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+#images {
+  border-radius: 20px;
+}
+

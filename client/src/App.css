@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 600px;
+}
+
+body {
+  background: url(ocean.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'roboto', 'helvetica neue', arial, sans-serif;
+}
+
+/* --- Intro text to the page --- */
+.intro {
+  padding: 15px 15px 25px 15px;
+  background-color: #ffffff;
+  text-align: center;
+  border: 2px solid black;
+  margin: 10% auto;
+  width: 900px;
+  opacity: 0.6;
+  border-radius: 25px;
+}
+
+.intro .intro__title {
+  font-weight: 200;
+  font-size: 32px;
+  color: black;
+  font-style: serif;
+}
+
+.intro .intro__body {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  opacity: 10;
+  padding: 0 160px;
+  margin: 0;
+}
+
+.splash {
+  padding: 15px 15px 25px 15px;
+  background-color: #ffffff;
+  text-align: center;
+  border: 2px solid black;
+  margin: 10% auto;
+  width: 500 px;
+  opacity: 0.6;
+  border-radius: 25px;
+}
+
+.splash .splash__title {
+  font-weight: 200;
+  font-size: 32px;
+  color: black;
+  font-style: serif;
+}
+
+.splash .splash__body {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  opacity: 10;
+  padding: 0 160px;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+    /* 50% */
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 600px;
+}
+
+body {
+  background: url(ocean.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'roboto', 'helvetica neue', arial, sans-serif;
+}
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+/*# sourceMappingURL=App.css.map */
+
+
+
+
+
+/*styles for flashcards need to figure out how to impliment into App.scss */
+/* .card-grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: .25rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+  background-color: white;
+  transform-style: preserve-3d;
+  transition: 150ms;
+  cursor: pointer;
+  transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+  translateY(var(--translate-y, 0));
+}
+
+.card:hover {
+  --translate-y: -2px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+}
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card .front {
+  left: 0;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  padding: 1rem;
+  backface-visibility: hidden;
+}
+
+.card .back {
+transform: rotateY(180deg);  
+}
+
+.flashcard-options {
+  margin-top: .5rem;
+}
+
+.flashcard-option {
+  margin-top: .25rem;
+  color: #555;
+  font-size: .75rem;
+}
+
+.flashcard-option:first-child {
+  margin-top: 0;
+} */
